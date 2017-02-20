@@ -232,9 +232,7 @@
             <field name="search_view_id" ref=""/>
         </record>
 
-        <menuitem id="session_menu" name="Sessions"
-                  parent="openacademy_menu"
-                  action="session_list_action"/>
+        
 
         <record model="ir.actions.act_window" id="delegation_list_action">
             <field name="name">Delegation</field>
@@ -282,6 +280,9 @@
         <!-- Full id location:
              action="openacademy.course_list_action"
              It is not required when it is the same module -->
+        <menuitem id="session_menu" name="Sessions"
+                  parent="openacademy_menu"
+                  action="session_list_action"/>
 
     </data>
 </openerp>
