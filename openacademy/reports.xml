@@ -15,10 +15,10 @@
                 <t t-call="report.external_layout">
                     <div class="page">
                         <h2 t-field="doc.name"/>
-                        <p>From <span t-field="doc.start_date"/> to <span t-field="doc.end_date"/></p>
-                        <h3>:</h3>
+                        <p>时间从 <span t-field="doc.start_date"/> 至 <span t-field="doc.end_date"/></p>
+                        <h3>学生:</h3>
                         <ul>
-                        学生    <t t-foreach="doc.attendee_ids" t-as="attendee">
+                            <t t-foreach="doc.attendee_ids" t-as="attendee">
                                 <li><span t-field="attendee.name"/></li>
                             </t>
                         </ul>
